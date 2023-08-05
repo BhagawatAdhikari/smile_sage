@@ -30,8 +30,9 @@ end
 def get_jokes(bot, message)
   joke = Jokes.new.joke_set
   bot.api.send_message(chat_id: message.chat.id, text: "#{joke['setup']}", date: message.date)
+  sleep(5)
   bot.api.send_message(chat_id: message.chat.id, text: "Answer: \n #{joke['punchline']}")
-  bot.api.send_message(chat_id: message.chat.id, text: "Type /more_joke to get some more quotes")
+  bot.api.send_message(chat_id: message.chat.id, text: "Type /more_joke to get some more jokes")
 end
 
 Telegram::Bot::Client.run(token) do |bot|
