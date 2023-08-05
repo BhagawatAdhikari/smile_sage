@@ -17,6 +17,12 @@ Smile Sage is a fun and interactive bot that provides users with inspirational q
 
 To use Smile Sage, you can simply interact with it through a chat interface. Add Smile Sage to your Gelegram platform, and you're ready to go!
 
+## Running the Server
+
+```ruby
+ruby bot.rb
+```
+
 ## Contributing
 
 We welcome contributions to make Smile Sage even more delightful. If you want to contribute, follow these steps:

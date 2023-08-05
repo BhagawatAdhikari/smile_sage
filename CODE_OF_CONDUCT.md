@@ -33,7 +33,7 @@ The following behaviors are considered unacceptable within our community:
 
 ## Reporting Incidents
 
-If you experience or witness any behavior that violates our Code of Conduct, please report it promptly. You can contact the project maintainers by emailing [maintainers-email@example.com](mailto:maintainers-email@example.com).
+If you experience or witness any behavior that violates our Code of Conduct, please report it promptly.
 
 All reports will be treated with confidentiality and will be addressed in a timely and fair manner.
 
