@@ -1,4 +1,4 @@
-# bot.rb
+
 require 'telegram/bot'
 require_relative 'quotes.rb'
 require_relative 'jokes.rb'
