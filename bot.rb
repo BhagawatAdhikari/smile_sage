@@ -35,7 +35,7 @@ def get_jokes(bot, message)
   bot.api.send_message(chat_id: message.chat.id, text: "Type /more_joke to get some more jokes")
 end
 
-Telegram::Bot::Client.run(token) do |bot|
+Telegram::Bot::Client.run(token, logger: Logger.new($stderr)) do |bot|
   bot.listen do |message|
     case message.text
     when '/start'
