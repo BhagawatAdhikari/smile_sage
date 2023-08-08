@@ -1,7 +1,7 @@
 
 require 'telegram/bot'
-require_relative 'quotes.rb'
-require_relative 'jokes.rb'
+require_relative 'lib/quotes.rb'
+require_relative 'lib/jokes.rb'
 
 token = ENV['BOT_TOKEN']
 
@@ -51,6 +51,8 @@ Telegram::Bot::Client.run(token, logger: Logger.new($stderr)) do |bot|
     when '/more_joke'
       get_jokes(bot, message)
     when '/end'
+      bot.api.send_photo(chat_id: message.chat.id, photo: Faraday::UploadIO.new('lib/images/image1.jpeg', 'image/jpeg'))
+      bot.api.send_photo(chat_id: message.chat.id, photo: 'https://c8.alamy.com/comp/R46J9P/bye-bye-comic-bubble-retro-text-R46J9P.jpg')
       bot.api.send_message(chat_id: message.chat.id, text: "Bye Bye, #{message.from.first_name}")
     else
       bot.api.send_message(chat_id: message.chat.id, text: "Invalid command. Type /menu to see the options.")
