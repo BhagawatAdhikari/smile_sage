@@ -7,8 +7,8 @@ token = ENV['BOT_TOKEN']
 
 def send_menu(bot, chat_id)
   options = [
-    ['/quote', 'To Quotes, type /quote'],
-    ['/joke', 'To Quotes, type /joke'],
+    ['/quote', 'To Get Quotes, type /quote'],
+    ['/joke', 'To Get Jokes, type /joke'],
     ['/end', 'To end the bot type /end'],
     ['/menu', 'To Check the menu, type /menu']
   ]
